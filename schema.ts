@@ -1,6 +1,6 @@
 const { gql } = require('apollo-server');
 
-const typeDefs = gql`
+module.exports = gql`
 
 type Query {
   posts(query: String): [Post!]!
@@ -44,4 +44,4 @@ type PostSubscriptionPayload {
 }
 `
 
-module.exports = typeDefs
+// module.exports = typeDefs

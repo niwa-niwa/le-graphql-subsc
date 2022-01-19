@@ -1,4 +1,4 @@
-const Query = {
+module.exports = {
   posts(parent: any, args: any, { db }: { db: any }, info: any) {
     if (!args.query) {
       return db.posts;
@@ -16,4 +16,4 @@ const Query = {
   },
 };
 
-module.exports = Query;
+// module.exports = Query;

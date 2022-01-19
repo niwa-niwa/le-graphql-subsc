@@ -16,6 +16,6 @@ const posts = [
   }
 ]
 
-const db = { posts, }
+// const db = { posts, }
 
-module.exports = db;
+module.exports = { posts, };

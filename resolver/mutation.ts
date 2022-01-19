@@ -1,4 +1,4 @@
-const Mutation = {
+module.exports = {
 
   createPost(
     parent: any,
@@ -84,4 +84,4 @@ const Mutation = {
 
 };
 
-module.exports = Mutation;
+// module.exports = Mutation;
