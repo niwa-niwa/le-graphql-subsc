@@ -5,5 +5,3 @@ module.exports = {
     },
   },
 };
-
-// module.exports = Subscription;

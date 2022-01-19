@@ -15,5 +15,3 @@ module.exports = {
     }
   },
 };
-
-// module.exports = Query;

@@ -16,6 +16,4 @@ const posts = [
   }
 ]
 
-// const db = { posts, }
-
 module.exports = { posts, };

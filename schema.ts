@@ -23,7 +23,7 @@ input CreatePostInput {
 
 input UpdatePostInput {
   title: String
-  author: String!
+  author: String
 }
 
 type Post {
@@ -43,5 +43,3 @@ type PostSubscriptionPayload {
   data: Post!
 }
 `
-
-// module.exports = typeDefs

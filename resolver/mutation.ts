@@ -83,5 +83,3 @@ module.exports = {
   },
 
 };
-
-// module.exports = Mutation;
