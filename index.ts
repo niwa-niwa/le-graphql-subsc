@@ -1,3 +1,5 @@
+import { AuthenticationError } from "apollo-server";
+
 const {
   ApolloServer,
   PubSub,
@@ -25,9 +27,14 @@ const server: any = new ApolloServer({
     Mutation,
     Subscription,
   },
-  context: {
-    db,
-    pubsub,
+  context: ({ req }: { req: any }) => {
+    
+    if(req.headers.authorization !== "password") throw new AuthenticationError("You must be logged in")
+
+    return {
+      db,
+      pubsub,
+    };
   },
 });
 
