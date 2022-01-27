@@ -4,6 +4,9 @@ module.exports = gql`
 
 type Query {
   posts(query: String): [Post!]!
+  me: User
+  users: [User!]
+  user(id: ID!): User
 }
 
 type Mutation {
@@ -30,6 +33,11 @@ type Post {
   id: ID!
   title: String!
   author: String!
+}
+
+type User {
+  id: ID!
+  username: String!
 }
 
 enum MutationType {

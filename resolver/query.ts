@@ -1,5 +1,5 @@
 module.exports = {
-  posts(parent: any, args: any, { db }: { db: any }, info: any) {
+  posts: (parent: any, args: any, { db }: { db: any }, info: any) => {
     if (!args.query) {
       return db.posts;
     } else {
@@ -14,4 +14,8 @@ module.exports = {
       });
     }
   },
+
+  me: () => me,
+  users: () => Object.values(users),
+  user: (parent: any, { id }: { id: any }) => users[id] == null,
 };
